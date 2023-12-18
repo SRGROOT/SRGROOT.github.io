@@ -160,7 +160,6 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
 
         <TextField
           required
-          autoFocus
           margin="dense"
           id="firstName"
           label="Имя"

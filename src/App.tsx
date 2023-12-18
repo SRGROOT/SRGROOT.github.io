@@ -41,11 +41,14 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Box
-        sx={{
+        sx={({ breakpoints }) => ({
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-        }}
+          [breakpoints.down("md")]: {
+            pt: 7,
+          },
+        })}
       >
         <Header />
         <Container
