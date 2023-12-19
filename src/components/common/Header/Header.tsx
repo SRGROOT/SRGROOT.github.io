@@ -1,6 +1,6 @@
 import { Container, AppBar } from "@mui/material";
-import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
 import { Cart } from "../Cart";
+import { Logo } from "../Logo";
 
 export const Header = () => {
   return (
@@ -25,7 +25,7 @@ export const Header = () => {
           alignItems: "center",
         }}
       >
-        <LocalFloristIcon component="svg" fontSize="large" color="primary" />
+        <Logo />
         <Cart />
       </Container>
     </AppBar>

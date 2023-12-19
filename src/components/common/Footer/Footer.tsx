@@ -1,5 +1,5 @@
 import { Box, Container } from "@mui/material";
-import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
+import { Logo } from "../Logo";
 
 export const Footer = () => {
   return (
@@ -13,7 +13,7 @@ export const Footer = () => {
       })}
     >
       <Container>
-        <LocalFloristIcon component="svg" fontSize="large" color="primary" />
+        <Logo />
       </Container>
     </Box>
   );
