@@ -1,6 +1,6 @@
 import {
+  Alert,
   Box,
-  Button,
   Dialog,
   DialogContent,
   DialogTitle,
@@ -8,7 +8,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  TextField,
   Typography,
   useMediaQuery,
   useTheme,
@@ -16,8 +15,20 @@ import {
 
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { Store } from "../../../store/store";
+import {
+  Store,
+  addLoaderValue,
+  createAlert,
+  resetCart,
+  subtractLoaderValue,
+} from "../../../store/store";
 import { ItemCounter } from ".";
+import { OrderForm } from "./OrderForm";
+import { OrderFormData } from "./types";
+
+import { getOrderTotal } from "./utils/getOrderTotal";
+import { getEmailMessage } from "./utils/prepareOrderEmailMessage";
+import { AlertType } from "../../../constants/constants";
 
 type Props = {
   isOpen: boolean;
@@ -28,19 +39,56 @@ type Props = {
 export const CartModal = ({ isOpen, onClose, cart }: Props) => {
   const list = Object.values(cart).sort((a, b) => a.name.localeCompare(b.name));
 
-  const total = list.reduce(
-    (acc, { amount, price }) => acc + price * amount,
-    0
-  );
-
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const handleSubmitOrder = (data: OrderFormData) => {
+    addLoaderValue();
+    fetch(import.meta.env.VITE_EMAIL_PROXY_URL, {
+      method: "POST",
+      body: getEmailMessage(data, list),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          handleClose();
+          resetCart();
+
+          createAlert({
+            id: Math.random(),
+            message: "Заявка отправлена!",
+            type: AlertType.SUCCESS,
+          });
+        }
+      })
+      .catch(() =>
+        createAlert({
+          id: Math.random(),
+          message: "Произошла ошибка!",
+          type: AlertType.ERROR,
+        })
+      )
+      .finally(() => {
+        subtractLoaderValue();
+      });
+  };
+
+  const handleClose = () => {
+    onClose();
+  };
+
   return (
-    <Dialog open={isOpen} fullScreen={fullScreen} onClose={onClose}>
+    <Dialog
+      sx={{ zIndex: 800 }}
+      open={isOpen}
+      fullScreen={fullScreen}
+      onClose={handleClose}
+    >
       <DialogTitle>Ваш заказ</DialogTitle>
       <IconButton
-        onClick={onClose}
+        onClick={handleClose}
         sx={{
           position: "absolute",
           right: 8,
@@ -120,6 +168,7 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
                 );
               })}
             </List>
+
             <Divider />
             <Box
               sx={{
@@ -142,7 +191,7 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
                 }}
                 fontWeight="bold"
               >
-                {total} ₽
+                {getOrderTotal(list)} ₽
               </Typography>
             </Box>
             <Divider />
@@ -158,42 +207,11 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
           </Typography>
         )}
 
-        <TextField
-          required
-          margin="dense"
-          id="firstName"
-          label="Имя"
-          type="text"
-          fullWidth
-          variant="standard"
+        <OrderForm
+          onSubmit={handleSubmitOrder}
+          isCartNotEmpty={Boolean(list.length)}
         />
-        <TextField
-          required
-          margin="dense"
-          id="surname"
-          label="Фамилия"
-          type="text"
-          fullWidth
-          variant="standard"
-        />
-        <TextField
-          required
-          margin="dense"
-          id="phone"
-          label="Телефон"
-          type="tel"
-          fullWidth
-          variant="standard"
-        />
-        <Button sx={{ mt: 4 }} fullWidth variant="contained" size="large">
-          Отправить заявку
-        </Button>
       </DialogContent>
-      {/* <DialogActions sx={{ justifyContent: "center" }}>
-        <Button fullWidth variant="contained" size="large" onClick={onClose}>
-          Отправить заявку
-        </Button>
-      </DialogActions> */}
     </Dialog>
   );
 };

@@ -1,3 +1,5 @@
+import { AlertType } from "../constants/constants";
+
 export type CategoryItem = {
   id: number;
   value: string;
@@ -14,6 +16,12 @@ export interface CatalogItem {
   categoryId: number;
   subCategoryId: number | null;
 }
+
+export type Alert = {
+  type: AlertType;
+  id: number;
+  message: string;
+};
 
 export interface CartItem extends CatalogItem {
   amount: number;

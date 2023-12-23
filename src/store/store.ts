@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { CartItem, CategoryItem } from "../types/types";
+import { Alert, CartItem, CategoryItem } from "../types/types";
 import { immer } from "zustand/middleware/immer";
 import { devtools } from "zustand/middleware";
 
@@ -7,18 +7,47 @@ export type Store = {
   selectedCategories: Record<number, Record<number, number>>;
   cart: Record<CartItem["id"], CartItem>;
   search: string;
+
+  loaderCount: number;
+  alertsMap: Record<Alert["id"], Alert>;
 };
 
 export const useGlobalStore = create<Store>()(
   devtools(
-    // @ts-ignore Баг с типизацией
     immer(() => ({
       cart: {},
       selectedCategories: {},
       search: "",
+      loaderCount: 0,
+      alertsMap: {},
     }))
   )
 );
+
+export const createAlert = (alert: Alert) =>
+  useGlobalStore.setState((state) => {
+    state.alertsMap[alert.id] = alert;
+  });
+
+export const closeAlert = (id: Alert["id"]) =>
+  useGlobalStore.setState((state) => {
+    delete state.alertsMap[id];
+  });
+
+export const addLoaderValue = () =>
+  useGlobalStore.setState((state) => {
+    state.loaderCount++;
+  });
+
+export const subtractLoaderValue = () =>
+  useGlobalStore.setState((state) => {
+    state.loaderCount--;
+  });
+
+export const resetCart = () =>
+  useGlobalStore.setState((state) => {
+    state.cart = {};
+  });
 
 export const setItemToCart = (item: CartItem) =>
   useGlobalStore.setState((state) => {

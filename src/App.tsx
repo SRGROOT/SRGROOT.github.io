@@ -10,10 +10,12 @@ import {
   CatalogSearch,
   Footer,
   Header,
+  LoaderManager,
 } from "./components/common";
 
 import { CATEGORIES_LIST } from "./constants/data";
 import { CatalogList } from "./components/common/CatalogList";
+import { AlertManager } from "./components/common/AlertManager/AlertManager";
 
 const defaultTheme = createTheme({
   palette: {
@@ -92,6 +94,8 @@ function App() {
         </Container>
         <Footer />
       </Box>
+      <LoaderManager />
+      <AlertManager />
     </ThemeProvider>
   );
 }
