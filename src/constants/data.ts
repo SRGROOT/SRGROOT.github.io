@@ -752,4 +752,4 @@ export const ITEMS_LIST: CatalogItem[] = [
   ...CAT_1_SUBCAT_1,
   ...CAT_1_SUBCAT_2,
   ...CAT_1_SUBCAT_4,
-];
+].sort((a, b) => a.name.localeCompare(b.name));

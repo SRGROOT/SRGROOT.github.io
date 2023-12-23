@@ -7,9 +7,9 @@ export type Store = {
   selectedCategories: Record<number, Record<number, number>>;
   cart: Record<CartItem["id"], CartItem>;
   search: string;
-
   loaderCount: number;
   alertsMap: Record<Alert["id"], Alert>;
+  page: number;
 };
 
 export const useGlobalStore = create<Store>()(
@@ -20,9 +20,15 @@ export const useGlobalStore = create<Store>()(
       search: "",
       loaderCount: 0,
       alertsMap: {},
+      page: 1,
     }))
   )
 );
+
+export const setPage = (value: number) =>
+  useGlobalStore.setState((state) => {
+    state.page = value;
+  });
 
 export const createAlert = (alert: Alert) =>
   useGlobalStore.setState((state) => {
@@ -115,9 +121,10 @@ export const changeSelectedCategory = (
     }
   });
 
-export const resetAllCategories = () =>
+export const resetFilters = () =>
   useGlobalStore.setState((state) => {
     state.selectedCategories = {};
+    state.page = 1;
   });
 
 export const setSearchValue = (value: string) =>

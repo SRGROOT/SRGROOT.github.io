@@ -15,6 +15,7 @@ import {
   Store,
   changeAllSubCategoriesByParentCategory,
   changeSelectedCategory,
+  setPage,
 } from "../../../store/store";
 
 type Props = {
@@ -58,6 +59,7 @@ export const CategoryListItem = ({
                 parentId,
                 isCategoryChecked ? [] : subItems
               );
+              setPage(1);
             }}
             sx={{ py: 0 }}
           >
@@ -77,7 +79,10 @@ export const CategoryListItem = ({
 
     return (
       <ListItemButton
-        onClick={() => changeSelectedCategory(parentId)}
+        onClick={() => {
+          changeSelectedCategory(parentId);
+          setPage(1);
+        }}
         sx={{ py: 0 }}
       >
         <ListItemIcon>

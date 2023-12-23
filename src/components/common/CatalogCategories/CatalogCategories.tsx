@@ -1,7 +1,7 @@
 import { List, Paper, Button, Container } from "@mui/material";
 import { CategoryItem } from "../../../types/types";
 import { CategoryListItem } from "./CategoryListItem";
-import { resetAllCategories, useGlobalStore } from "../../../store/store";
+import { resetFilters, useGlobalStore } from "../../../store/store";
 
 type Props = {
   data: CategoryItem[];
@@ -39,7 +39,7 @@ export const CatalogCategories = ({ data }: Props) => {
             <Button
               size="small"
               sx={{ ml: "auto" }}
-              onClick={resetAllCategories}
+              onClick={resetFilters}
               disabled={!Object.keys(selectedCategories).length}
             >
               Сбросить

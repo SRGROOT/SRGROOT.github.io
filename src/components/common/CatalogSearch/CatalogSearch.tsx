@@ -1,9 +1,14 @@
 import { Container } from "@mui/material";
-import { setSearchValue, useGlobalStore } from "../../../store/store";
+import { setPage, setSearchValue, useGlobalStore } from "../../../store/store";
 import { Search } from "../../basic";
 
 export const CatalogSearch = () => {
   const searchValue = useGlobalStore((state) => state.search);
+
+  const handleSearch = (value: string) => {
+    setSearchValue(value);
+    setPage(1);
+  };
 
   return (
     <Container
@@ -18,9 +23,9 @@ export const CatalogSearch = () => {
       disableGutters
     >
       <Search
-        handleDebouncedValue={setSearchValue}
+        handleDebouncedValue={handleSearch}
         initialValue={searchValue}
-        onClear={() => setSearchValue("")}
+        onClear={() => handleSearch("")}
       />
     </Container>
   );
