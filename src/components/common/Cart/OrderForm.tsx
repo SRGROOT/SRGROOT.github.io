@@ -44,7 +44,7 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
         type="text"
         fullWidth
         variant="standard"
-        inputProps={{ maxLength: 20 }}
+        inputProps={{ maxLength: 50 }}
       />
 
       <TextField
