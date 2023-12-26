@@ -1067,9 +1067,25 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
   },
 ];
 
-export const ITEMS_LIST: CatalogItem[] = [
-  ...CAT_1_SUBCAT_1,
-  ...CAT_1_SUBCAT_2,
-  ...CAT_1_SUBCAT_4,
-  ...CAT_1_SUBCAT_6,
-].sort((a, b) => a.name.localeCompare(b.name));
+export const ITEMS_LIST: CatalogItem[] = (() => {
+  const sortedList = [
+    ...CAT_1_SUBCAT_1,
+    ...CAT_1_SUBCAT_2,
+    ...CAT_1_SUBCAT_4,
+    ...CAT_1_SUBCAT_6,
+  ].sort((a, b) => a.name.localeCompare(b.name));
+
+  const notAvailableList: CatalogItem[] = [];
+
+  return sortedList
+    .reduce<CatalogItem[]>((acc, item) => {
+      if (item.isAvailable) {
+        acc.push(item);
+        return acc;
+      }
+
+      notAvailableList.push(item);
+      return acc;
+    }, [])
+    .concat(notAvailableList);
+})();
