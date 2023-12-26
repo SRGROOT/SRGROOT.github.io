@@ -26,7 +26,7 @@ export const prepareListDataForView = (
   const list = ITEMS_LIST.filter(({ name, categoryId, subCategoryId }) => {
     return (
       (search ? name.toLowerCase().includes(search.toLowerCase()) : true) &&
-      (!!selectedCategoriesAmount
+      (selectedCategoriesAmount
         ? subCategoryId
           ? !!selectedCategories[categoryId]?.[subCategoryId]
           : !!selectedCategories[categoryId]

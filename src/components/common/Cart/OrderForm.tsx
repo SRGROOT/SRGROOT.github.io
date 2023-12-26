@@ -56,6 +56,7 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
         fullWidth
         variant="standard"
         InputProps={{
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           inputComponent: PhoneInput as any,
           onChange: ({ currentTarget: { value } }) => setPhone(value),
         }}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useRef } from "react";
 
 const useDebounce = (callback: (args: any) => void, delay: number) => {

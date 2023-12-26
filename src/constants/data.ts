@@ -55,10 +55,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "43",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 44,
-    name: "Вербена Empress Flair Pink Charme ",
+    name: "Вербена Empress Flair Pink Charme",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -66,10 +67,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "44",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 45,
-    name: "Вербена Empress Sun Purple Charme  ",
+    name: "Вербена Empress Sun Purple Charme",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -77,10 +79,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "45",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 46,
-    name: "Вербена Empress Sun Red  ",
+    name: "Вербена Empress Sun Red",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -88,10 +91,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "46",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 47,
-    name: "Вербена EMPRESS FLAIR VIOLET BLUE ",
+    name: "Вербена Empress Flair Violet Blue",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -99,10 +103,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "47",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 48,
-    name: "Вербена Samira Deep Red Star  ",
+    name: "Вербена Samira Deep Red Star",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -110,10 +115,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "48",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 49,
-    name: "Вербена Drums Purple Red ",
+    name: "Вербена Drums Purple Red",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -121,10 +127,11 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "49",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 50,
-    name: "Вербена Lanai Twister Blue ",
+    name: "Вербена Lanai Twister Blue",
     description:
       "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
     price: 100,
@@ -132,6 +139,7 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "50",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
   {
     id: 51,
@@ -143,13 +151,14 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     image: "51",
     categoryId: 1,
     subCategoryId: 2,
+    isAvailable: true,
   },
 ];
 
 const CAT_1_SUBCAT_4: CatalogItem[] = [
   {
     id: 52,
-    name: "Sunny Compact Hazel ",
+    name: "Sunny Compact Hazel",
     description:
       "Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
     price: 100,
@@ -157,10 +166,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "52",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 53,
-    name: "Sunny FELIX ",
+    name: "Sunny FELIX",
     description:
       " Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
     price: 100,
@@ -168,10 +178,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "53",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 54,
-    name: "Sunny Gaia    ",
+    name: "Sunny Gaia",
     description:
       "Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
     price: 100,
@@ -179,6 +190,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "54",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 55,
@@ -190,10 +202,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "55",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 56,
-    name: "Lemon Ice         ",
+    name: "Lemon Ice",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -201,6 +214,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "56",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 57,
@@ -212,10 +226,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "57",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 58,
-    name: "Dalina Double Francisco                                    ",
+    name: "Dalina Double Francisco",
     description:
       "Крупноцветковый остеоспермум. Низкорослый. Высота куста до 40 см. Очень обильно цветущий. Засухоустойчив. Цветы махрового типа.",
     price: 100,
@@ -223,10 +238,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "58",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 59,
-    name: "Margarita Yellow                                    ",
+    name: "Margarita Yellow",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -234,10 +250,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "59",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 60,
-    name: "Flower Power Tropic Sun                                                   ",
+    name: "Flower Power Tropic Sun",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -245,11 +262,12 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "60",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
 
   {
     id: 61,
-    name: "MARGARITA DOUBLE WHITE                                    ",
+    name: "Margarita Double White",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -257,10 +275,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "61",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 62,
-    name: "Махровый 3D Deep Sun                                  ",
+    name: "Махровый 3D Deep Sun",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -268,10 +287,11 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "62",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
   {
     id: 63,
-    name: "Margarita Double Pink                                   ",
+    name: "Margarita Double Pink",
     description:
       "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
     price: 100,
@@ -279,6 +299,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "63",
     categoryId: 1,
     subCategoryId: 4,
+    isAvailable: true,
   },
 ];
 
@@ -293,6 +314,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "1",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 2,
@@ -304,10 +326,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "2",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 3,
-    name: "Петуния Cascadias Iceberg ",
+    name: "Петуния Cascadias Iceberg",
     description:
       "Одна из самых популярных серий каскадной петунии, благодаря отличному ветвлению образует пышный шар диаметром до 80 см. Идеально подходит для подвесных кашпо, вазонов и балконных ящиков.",
     price: 110,
@@ -315,10 +338,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "3",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 4,
-    name: "Петуния Cascadias Rim Chianti ",
+    name: "Петуния Cascadias Rim Chianti",
     description:
       "Одна из самых популярных серий каскадной петунии, благодаря отличному ветвлению образует пышный шар диаметром до 80 см. Идеально подходит для подвесных кашпо, вазонов и балконных ящиков.",
     price: 110,
@@ -326,10 +350,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "4",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 5,
-    name: "Петуния Sweetunia Purple ",
+    name: "Петуния Sweetunia Purple",
     description:
       "Популярная серия гибридной петунии с полуампельным габитусом и оригинальными окрасками цветков, высота 20-30 см, побеги 60-70 см. Шикарные шарообразные шапки слегка приподнимаются над кашпо.",
     price: 110,
@@ -337,10 +362,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "5",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 6,
-    name: "Петуния Sweetunia White ",
+    name: "Петуния Sweetunia White",
     description:
       "Популярная серия гибридной петунии с полуампельным габитусом и оригинальными окрасками цветков, высота 20-30 см, побеги 60-70 см. Шикарные шарообразные шапки слегка приподнимаются над кашпо.",
     price: 110,
@@ -348,10 +374,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "6",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 7,
-    name: "Петуния Cascadias Pitaya ",
+    name: "Петуния Cascadias Pitaya",
     description:
       "Одна из самых популярных серий каскадной петунии, благодаря отличному ветвлению образует пышный шар диаметром до 80 см. Идеально подходит для подвесных кашпо, вазонов и балконных ящиков.",
     price: 110,
@@ -359,10 +386,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "7",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 8,
-    name: "Петуния Blanket Rose ",
+    name: "Петуния Blanket Rose",
     description:
       "Cуперкаскадная петуния с некрупными цветками. Один из самых мощных ампелей. В диаметре может достигать более двух метров. Куст идеальный, не требует формирования. Цветы мелкие, в форме колокольчиков, где-то 3 см, но цветение суперобильное на протяжении всего сезона. Эта петуния покрывает пространство вокруг, словно плотным одеялом.",
     price: 110,
@@ -370,6 +398,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "8",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 9,
@@ -381,10 +410,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "9",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 11,
-    name: "Петхоа Beautical Caramel Yellow ",
+    name: "Петхоа Beautical Caramel Yellow",
     description:
       "Гибрид петунии и калибрахоа. От Калибрахоа эта сортосерия взяла яркие цвета, от петунии- выносливость. Cорт компактный, цветы среднего размера. Отлично держит непогоду, выдерживает палящее солнце, плети не страдают от ветра, быстро восстанавливается после дождя.",
     price: 110,
@@ -392,10 +422,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "11",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: false,
   },
   {
     id: 10,
-    name: "Петуния Mystical Midnight Gold ",
+    name: "Петуния Mystical Midnight Gold",
     description:
       "Это мощное, чрезвычайно ветвистое растение. Изобилие его великолепных цветов замечательно выглядит каскадом из подвесных корзин или контейнеров.",
     price: 110,
@@ -403,10 +434,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "10",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 12,
-    name: "Петуния Glacier Sky ",
+    name: "Петуния Glacier Sky",
     description:
       "Идеальная ампельная петуния для подвесных корзин. Длина побегов 60-80 см., энергичный рост и великолепная устойчивость к неблагоприятной погоде.",
     price: 110,
@@ -414,6 +446,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "12",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
 
   {
@@ -426,10 +459,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "13",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 14,
-    name: "Петуния Splash Dance Magenta Mambo ",
+    name: "Петуния Splash Dance Magenta Mambo",
     description:
       "Яркий и красивый сорт, очень обильно цветущее компактное растение, отличается крупными цветками диаметром до 10 см. ",
     price: 110,
@@ -437,10 +471,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "14",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 15,
-    name: "Петуния Sweetunia Black Satin ",
+    name: "Петуния Sweetunia Black Satin",
     description:
       "Популярная серия гибридной петунии с полуампельным габитусом и оригинальными окрасками цветков, высота 20-30 см, побеги 60-70 см. Шикарные шарообразные шапки слегка приподнимаются над кашпо.",
     price: 110,
@@ -448,10 +483,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "15",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 16,
-    name: "Петуния Surfinia Table White ",
+    name: "Петуния Surfinia Table White",
     description:
       "Компактная плотная форма. Гибкие ветки образуют настоящий водопад, особенно эффектный в подвесных корзинах",
     price: 110,
@@ -459,10 +495,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "16",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 17,
-    name: "Петуния Amore Fiesta ",
+    name: "Петуния Amore Fiesta",
     description:
       "Великолепная шарообразная полуампельная форма, отличное ветвление, не оголяется в центре. Очень пышное и раннее цветение, устойчивость к непогоде.",
     price: 110,
@@ -470,6 +507,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "17",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 18,
@@ -481,10 +519,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "18",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 19,
-    name: "Петуния Cascadias Rim Magenta ",
+    name: "Петуния Cascadias Rim Magenta",
     description:
       "Одна из самых популярных серий каскадной петунии, благодаря отличному ветвлению образует пышный шар диаметром до 80 см. Идеально подходит для подвесных кашпо, вазонов и балконных ящиков.",
     price: 110,
@@ -492,10 +531,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "19",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 20,
-    name: "Петуния Cascadias Rim Violet ",
+    name: "Петуния Cascadias Rim Violet",
     description:
       "Одна из самых популярных серий каскадной петунии, благодаря отличному ветвлению образует пышный шар диаметром до 80 см. Идеально подходит для подвесных кашпо, вазонов и балконных ящиков.",
     price: 110,
@@ -503,10 +543,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "20",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 21,
-    name: "Петуния Splash Dance Violet Vogue ",
+    name: "Петуния Splash Dance Violet Vogue",
     description:
       " Формирует огромные густые кусты с плотным цветением. Ширина до 60 см ",
     price: 110,
@@ -514,10 +555,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "21",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 22,
-    name: "Петуния Bonnie Mystery Sky ",
+    name: "Петуния Bonnie Mystery Sky",
     description:
       "Петуния с полуампельной формой и ранним цветением. Cредний рост и прекрасная аккуратная форма, очень продолжительное обильное цветение.",
     price: 110,
@@ -525,6 +567,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "22",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: false,
   },
   {
     id: 23,
@@ -536,10 +579,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "23",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 24,
-    name: "Petunia Peppy Blueberry Muffin ",
+    name: "Petunia Peppy Blueberry Muffin",
     description:
       "Ампельная петуния, все сорта имеют цветы со звездой. Высота куста 20 см, длина побегов 45-50 см. Крупные цветки, обильное и продолжительное цветение. Образует шикарные шапки благодаря отличному ветвлению, форма куста каскадная, нарастает быстро.",
     price: 110,
@@ -547,10 +591,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "24",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 25,
-    name: "Петуния Surprise Kardinal ",
+    name: "Петуния Surprise Kardinal",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 110,
@@ -558,10 +603,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "25",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 26,
-    name: "Петуния Sweetunia Johnny Flame ",
+    name: "Петуния Sweetunia Johnny Flame",
     description:
       "Популярная серия петунии с полуампельным габитусом и оригинальными окрасками цветков. Высота 20-30 см, побеги 60-70 см, обильное и продолжительное цветение.",
     price: 110,
@@ -569,10 +615,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "26",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 27,
-    name: "Петуния Sweetunia Purple Gem ",
+    name: "Петуния Sweetunia Purple Gem",
     description:
       "Популярная серия петунии с полуампельным габитусом и оригинальными окрасками цветков. Высота 20-30 см, побеги 60-70 см, обильное и продолжительное цветение.",
     price: 110,
@@ -580,10 +627,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "27",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 28,
-    name: "Петуния Sweetunia Purple Touch ",
+    name: "Петуния Sweetunia Purple Touch",
     description:
       "Популярная серия петунии с полуампельным габитусом и оригинальными окрасками цветков. Высота 20-30 см, побеги 60-70 см, обильное и продолжительное цветение.",
     price: 110,
@@ -591,6 +639,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "28",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 29,
@@ -602,10 +651,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "29",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 30,
-    name: "Петуния Sweetunia Starfish ",
+    name: "Петуния Sweetunia Starfish",
     description:
       "Популярная серия петунии с полуампельным габитусом и оригинальными окрасками цветков. Высота 20-30 см, побеги 60-70 см, обильное и продолжительное цветение.",
     price: 110,
@@ -613,6 +663,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "30",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 31,
@@ -624,6 +675,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "31",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 32,
@@ -635,10 +687,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "32",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 33,
-    name: "Петуния Surprise Red ",
+    name: "Петуния Surprise Red",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 110,
@@ -646,6 +699,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "33",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 34,
@@ -657,6 +711,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "34",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 35,
@@ -668,10 +723,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "35",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 36,
-    name: "Петуния Surprise Sparkling Blue ",
+    name: "Петуния Surprise Sparkling Blue",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 110,
@@ -679,6 +735,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "36",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 37,
@@ -690,6 +747,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "37",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 38,
@@ -701,6 +759,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "38",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 39,
@@ -712,6 +771,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "39",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 40,
@@ -723,6 +783,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "40",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 41,
@@ -734,6 +795,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "41",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
   {
     id: 42,
@@ -745,6 +807,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "42",
     categoryId: 1,
     subCategoryId: 1,
+    isAvailable: true,
   },
 ];
 

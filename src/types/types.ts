@@ -15,6 +15,7 @@ export interface CatalogItem {
   vendorCode: number;
   categoryId: number;
   subCategoryId: number | null;
+  isAvailable: boolean;
 }
 
 export type Alert = {

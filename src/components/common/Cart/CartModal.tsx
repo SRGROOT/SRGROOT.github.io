@@ -98,7 +98,7 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
         <CloseIcon />
       </IconButton>
       <DialogContent sx={{ pt: 0 }}>
-        {!!list.length ? (
+        {list.length ? (
           <>
             <List sx={{ width: "100%" }}>
               {list.map((item) => {

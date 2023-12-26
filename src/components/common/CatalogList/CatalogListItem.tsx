@@ -18,7 +18,7 @@ type Props = {
 };
 
 export const CatalogListItem = ({ data }: Props) => {
-  const { description, id, image, name, price, vendorCode } = data;
+  const { description, id, image, name, price, vendorCode, isAvailable } = data;
 
   const cartItem = useGlobalStore((state) => state.cart[id]);
   const cartAmount = cartItem?.amount || null;
@@ -46,19 +46,23 @@ export const CatalogListItem = ({ data }: Props) => {
           mt: "auto",
         }}
       >
-        {!cartAmount ? (
-          <Button
-            onClick={() => {
-              setItemToCart({ ...data, amount: 1 });
-            }}
-            variant="contained"
-            size="small"
-            color="secondary"
-          >
-            <ShoppingCartOutlinedIcon />
-          </Button>
+        {isAvailable ? (
+          !cartAmount ? (
+            <Button
+              onClick={() => {
+                setItemToCart({ ...data, amount: 1 });
+              }}
+              variant="contained"
+              size="small"
+              color="secondary"
+            >
+              <ShoppingCartOutlinedIcon />
+            </Button>
+          ) : (
+            <ItemCounter cartItem={cartItem} />
+          )
         ) : (
-          <ItemCounter cartItem={cartItem} />
+          <Typography>Нет в наличии</Typography>
         )}
 
         <Typography
