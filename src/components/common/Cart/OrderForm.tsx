@@ -14,7 +14,7 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const isEmailValid = validateEmail(email);
+  const isEmailValid = email ? validateEmail(email) : true;
   const isFormValid =
     isCartNotEmpty && name && validatePhone(phone) && isEmailValid;
 
@@ -32,20 +32,6 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
         variant="standard"
         inputProps={{ maxLength: 20 }}
       />
-      <TextField
-        required
-        error={Boolean(email && !isEmailValid)}
-        value={email}
-        onChange={({ currentTarget: { value } }) => setEmail(value)}
-        margin="dense"
-        id="email"
-        inputMode="email"
-        label="Почта"
-        type="text"
-        fullWidth
-        variant="standard"
-        inputProps={{ maxLength: 50 }}
-      />
 
       <TextField
         required
@@ -60,6 +46,20 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
           inputComponent: PhoneInput as any,
           onChange: ({ currentTarget: { value } }) => setPhone(value),
         }}
+      />
+
+      <TextField
+        error={Boolean(email && !isEmailValid)}
+        value={email}
+        onChange={({ currentTarget: { value } }) => setEmail(value)}
+        margin="dense"
+        id="email"
+        inputMode="email"
+        label="Почта"
+        type="text"
+        fullWidth
+        variant="standard"
+        inputProps={{ maxLength: 50 }}
       />
 
       <Button
