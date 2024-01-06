@@ -27,7 +27,7 @@ export const CategoryListItem = ({
   data: { id: parentId, subItems, value },
   selectedCategories,
 }: Props) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const selectedSubCategories = selectedCategories[parentId];
 
