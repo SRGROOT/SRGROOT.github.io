@@ -1,3 +1,4 @@
+import { SUB_CATEGORIES_MAP } from "../../../../constants/data";
 import { CartItem } from "../../../../types/types";
 import { OrderFormData } from "../types";
 
@@ -7,15 +8,20 @@ export const getEmailMessage = (
 ): FormData => {
   let total = 0;
   const rows = list.reduce<string>(
-    (acc, { amount, name, price, vendorCode }) => {
+    (acc, { amount, name, price, vendorCode, subCategoryId, categoryId }) => {
       const sum = price * amount;
       total += sum;
+
+      // TODO Нет проверок, что SUB_CATEGORIES_MAP[categoryId] содержит categoryId
+      const subCategoryName = subCategoryId
+        ? SUB_CATEGORIES_MAP[categoryId][subCategoryId].value
+        : "";
 
       return (
         acc +
         `
         ------------
-        Артикул: ${vendorCode}
+        Артикул: ${subCategoryName} (${vendorCode})
         Наименование: ${name}
         Цена: ${price}
         Количество: ${amount}

@@ -1,48 +1,57 @@
 import { CatalogItem, CategoryItem } from "../types/types";
 
-export const CATEGORIES_LIST: CategoryItem[] = [
-  {
+export const SUB_CATEGORIES_MAP: Record<
+  CategoryItem["id"],
+  Record<CategoryItem["id"], CategoryItem>
+> = {
+  1: {
+    1: {
+      id: 1,
+      value: "Петуния",
+      subItems: null,
+    },
+    2: {
+      id: 2,
+      value: "Вербена",
+      subItems: null,
+    },
+    3: {
+      id: 3,
+      value: "Калибрахоа",
+      subItems: null,
+    },
+    4: {
+      id: 4,
+      value: "Остеоспермум",
+      subItems: null,
+    },
+    5: {
+      id: 5,
+      value: "Пеларгония",
+      subItems: null,
+    },
+    6: {
+      id: 6,
+      value: "Гвоздика",
+      subItems: null,
+    },
+  },
+};
+
+export const CATEGORIES_MAP: Record<CategoryItem["id"], CategoryItem> = {
+  1: {
     id: 1,
     value: "Укоренённые черенки",
-    subItems: [
-      {
-        id: 1,
-        value: "Петуния",
-        subItems: null,
-      },
-      {
-        id: 2,
-        value: "Вербена",
-        subItems: null,
-      },
-      {
-        id: 3,
-        value: "Калибрахоа",
-        subItems: null,
-      },
-      {
-        id: 4,
-        value: "Остеоспермум",
-        subItems: null,
-      },
-      {
-        id: 5,
-        value: "Пеларгония",
-        subItems: null,
-      },
-      {
-        id: 6,
-        value: "Гвоздика",
-        subItems: null,
-      },
-    ],
+    subItems: Object.values(SUB_CATEGORIES_MAP[1]),
   },
-  {
+  2: {
     id: 2,
     value: "Другое",
     subItems: null,
   },
-];
+};
+
+export const CATEGORIES_LIST = Object.values(CATEGORIES_MAP);
 
 const CAT_1_SUBCAT_6: CatalogItem[] = [
   {
