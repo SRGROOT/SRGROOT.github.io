@@ -8,6 +8,7 @@ import {
   List,
   ListItem,
   IconButton,
+  Typography,
 } from "@mui/material";
 import { useState } from "react";
 import { CategoryItem } from "../../../types/types";
@@ -24,17 +25,26 @@ type Props = {
 };
 
 export const CategoryListItem = ({
-  data: { id: parentId, subItems, value },
+  data: { id: parentId, subItems, value, length },
   selectedCategories,
 }: Props) => {
   const [open, setOpen] = useState(true);
 
   const selectedSubCategories = selectedCategories[parentId];
 
+  const itemsAvailableForSelection =
+    subItems?.filter(({ length }) => !!length) || [];
+
+  const isListItemDisabled = subItems
+    ? !itemsAvailableForSelection.length
+    : !length;
+
   const isCategoryChecked =
-    selectedSubCategories && subItems
-      ? subItems.length === Object.keys(selectedSubCategories).length
-      : !!selectedSubCategories;
+    !isListItemDisabled &&
+    (selectedSubCategories && subItems
+      ? itemsAvailableForSelection.length ===
+        Object.keys(selectedSubCategories).length
+      : !!selectedSubCategories);
 
   /** TODO Refactoring */
   const getListItem = () => {
@@ -57,11 +67,12 @@ export const CategoryListItem = ({
             onClick={() => {
               changeAllSubCategoriesByParentCategory(
                 parentId,
-                isCategoryChecked ? [] : subItems
+                isCategoryChecked ? [] : itemsAvailableForSelection
               );
               setPage(1);
             }}
             sx={{ py: 0 }}
+            disabled={isListItemDisabled}
           >
             <ListItemIcon>
               <Checkbox
@@ -84,6 +95,7 @@ export const CategoryListItem = ({
           setPage(1);
         }}
         sx={{ py: 0 }}
+        disabled={isListItemDisabled}
       >
         <ListItemIcon>
           <Checkbox
@@ -93,7 +105,18 @@ export const CategoryListItem = ({
             tabIndex={-1}
           />
         </ListItemIcon>
-        <ListItemText primary={value} />
+        <ListItemText
+          primary={
+            <>
+              {value}{" "}
+              {!isListItemDisabled && (
+                <Typography component="span" sx={{ opacity: 0.38 }}>
+                  ({length})
+                </Typography>
+              )}
+            </>
+          }
+        />
       </ListItemButton>
     );
   };
@@ -104,22 +127,39 @@ export const CategoryListItem = ({
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List disablePadding>
           {subItems &&
-            subItems.map(({ id, value }) => (
-              <ListItemButton
-                key={id}
-                onClick={() => changeSelectedCategory(parentId, id)}
-                sx={{ p: 0, pl: 3 }}
-              >
-                <ListItemIcon>
-                  <Checkbox
-                    checked={!!selectedSubCategories?.[id]}
-                    disableRipple
-                    tabIndex={-1}
+            subItems.map(({ id, value, length }) => {
+              const isDisabled = !length;
+
+              return (
+                <ListItemButton
+                  key={id}
+                  onClick={() => changeSelectedCategory(parentId, id)}
+                  sx={{ py: 0, pl: 3 }}
+                  disabled={isDisabled}
+                >
+                  <ListItemIcon>
+                    <Checkbox
+                      checked={!!selectedSubCategories?.[id]}
+                      disableRipple
+                      tabIndex={-1}
+                    />
+                  </ListItemIcon>
+
+                  <ListItemText
+                    primary={
+                      <>
+                        {value}{" "}
+                        {!isDisabled && (
+                          <Typography component="span" sx={{ opacity: 0.38 }}>
+                            ({length})
+                          </Typography>
+                        )}
+                      </>
+                    }
                   />
-                </ListItemIcon>
-                <ListItemText primary={value} />
-              </ListItemButton>
-            ))}
+                </ListItemButton>
+              );
+            })}
         </List>
       </Collapse>
     </>

@@ -4,6 +4,7 @@ export type CategoryItem = {
   id: number;
   value: string;
   subItems: CategoryItem[] | null;
+  length?: number;
 };
 
 export interface CatalogItem {
