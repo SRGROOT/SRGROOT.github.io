@@ -695,7 +695,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "15",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 16,
