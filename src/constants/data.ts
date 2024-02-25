@@ -839,7 +839,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "27",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 28,
@@ -935,7 +935,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "35",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 36,
