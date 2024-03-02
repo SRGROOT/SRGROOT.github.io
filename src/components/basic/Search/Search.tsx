@@ -9,12 +9,14 @@ type Props = {
   initialValue?: string;
   onClear: VoidFunction;
   handleDebouncedValue: (value: string) => void;
+  placeholder?: string;
 };
 
 export const Search = ({
   initialValue = "",
   handleDebouncedValue,
   onClear,
+  placeholder = "Поиск",
 }: Props) => {
   const [searchValue, setSearchValue] = useState(initialValue);
 
@@ -39,7 +41,7 @@ export const Search = ({
           debouncedCallback(value);
         }}
         sx={{ ml: 2, flex: 1 }}
-        placeholder="Поиск"
+        placeholder={placeholder}
       />
 
       {searchValue && (

@@ -23,16 +23,24 @@ export const prepareListDataForView = (
       },
     ];
 
-  const list = ITEMS_LIST.filter(({ name, categoryId, subCategoryId }) => {
-    return (
-      (search ? name.toLowerCase().includes(search.toLowerCase()) : true) &&
-      (selectedCategoriesAmount
-        ? subCategoryId
-          ? !!selectedCategories[categoryId]?.[subCategoryId]
-          : !!selectedCategories[categoryId]
-        : true)
-    );
-  });
+  const lowerCaseSearchValue = search.trim().toLowerCase();
+
+  const list = ITEMS_LIST.filter(
+    ({ name, vendorCode, categoryId, subCategoryId }) => {
+      return (
+        (search
+          ? isNaN(+lowerCaseSearchValue)
+            ? name.toLowerCase().includes(lowerCaseSearchValue)
+            : String(vendorCode) === lowerCaseSearchValue
+          : true) &&
+        (selectedCategoriesAmount
+          ? subCategoryId
+            ? !!selectedCategories[categoryId]?.[subCategoryId]
+            : !!selectedCategories[categoryId]
+          : true)
+      );
+    }
+  );
 
   return [
     list.slice(0, currentVisibleItemsAmount),

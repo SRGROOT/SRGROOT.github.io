@@ -26,6 +26,7 @@ export const CatalogSearch = () => {
         handleDebouncedValue={handleSearch}
         initialValue={searchValue}
         onClear={() => handleSearch("")}
+        placeholder="Введите артикул или наименование"
       />
     </Container>
   );
