@@ -1,260 +1,10 @@
 import { CatalogItem, CategoryItem } from "../types/types";
 
-const CAT_1_SUBCAT_6: CatalogItem[] = [
-  {
-    id: 64,
-    name: "Гвоздика Capitan Calizo",
-    description:
-      "Имеет махровые ароматные цветки, с белой каймой и полосками на темно-вишневом фоне. Цветки расположены по 2-3 шт. на каждом цветоносе. Быстрорастущий сорт, хорошо походит как для больших горшков и контейнеров, так и для цветущих клумб открытого грунта. Высотой около 25 см.",
-    price: 100,
-    vendorCode: 1,
-    image: "64",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 65,
-    name: "Гвоздика Capitan Diaz",
-    description:
-      "Имеет махровые ароматные цветки. Цветки расположены по 2-3 шт. на каждом цветоносе. Быстрорастущий сорт, хорошо походит как для больших горшков и контейнеров, так и для цветущих клумб открытого грунта. Высотой около 25 см.",
-    price: 100,
-    vendorCode: 2,
-    image: "65",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 66,
-    name: "Гвоздика Colores Oro",
-    description:
-      "Растение с яркими, махровыми, крупными цветками. Компактное растение с отличным ветвлением, энергичным ростом. Может выращиваться в больших горшках.",
-    price: 100,
-    vendorCode: 3,
-    image: "66",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 67,
-    name: "Гвоздика Dia Deur Sissy",
-    description:
-      "Цветки ароматные, махровые, бело-розовые с вишневыми штрихами в центре. Куст высотой 20-25 см., компактный.",
-    price: 100,
-    vendorCode: 4,
-    image: "67",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 68,
-    name: "Гвоздика Dia Deur Sophie",
-    description:
-      "Цветки ароматные, махровые. Куст высотой 20-25 см., компактный.",
-    price: 100,
-    vendorCode: 5,
-    image: "68",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 69,
-    name: "Гвоздика Diantica Bordeaux",
-    description:
-      "Растение с яркими цветками. Компактное растение с отличным ветвлением.",
-    price: 100,
-    vendorCode: 6,
-    image: "69",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 70,
-    name: "Гвоздика  Diantica Cremarena",
-    description:
-      "Растение с яркими цветками. Компактное растение с отличным ветвлением.",
-    price: 100,
-    vendorCode: 7,
-    image: "70",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 71,
-    name: "Гвоздика Oscar Dark Red",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 10,
-    image: "71",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
+const CAT_1_SUBCAT_7: CatalogItem[] = [];
 
-  {
-    id: 72,
-    name: "Гвоздика Oscar pink purple",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 12,
-    image: "72",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 73,
-    name: "Гвоздика Oscar Purple Star",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 13,
-    image: "73",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 74,
-    name: "Гвоздика Oscar Purple Wings",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 14,
-    image: "74",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 75,
-    name: "Гвоздика Oscar Violet and Pink",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 15,
-    image: "75",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 76,
-    name: "Гвоздика Purple Wedding",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение. Лучше всего подходит для горшка до 12 см..",
-    price: 100,
-    vendorCode: 18,
-    image: "76",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 77,
-    name: "Гвоздика Oscar Red Star",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение.Большой ассортимент красивых окрасок.",
-    price: 100,
-    vendorCode: 19,
-    image: "77",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 78,
-    name: "Гвоздика Sunflor Fygi",
-    description:
-      "Компактное растение, отличное ветвление. Раннее продолжительное цветение. Высота 10-15 см, ширина 15-20 см..",
-    price: 100,
-    vendorCode: 20,
-    image: "78",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 79,
-    name: "Гвоздика Flow Apella Beach",
-    description:
-      "Растения образуют аккуратный компактный кустик с полностью махровыми цветками диаметром 3-6 см. Высота 10-15 см, ширина 15-20 см. Раннее продолжительное цветение.",
-    price: 100,
-    vendorCode: 21,
-    image: "79",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 80,
-    name: "Гвоздика Flow Glen Bay",
-    description:
-      "Растения образуют аккуратный компактный кустик с полностью махровыми цветками диаметром 3-6 см. Высота 10-15 см, ширина 15-20 см. Раннее продолжительное цветение.",
-    price: 100,
-    vendorCode: 22,
-    image: "80",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 81,
-    name: "Гвоздика Dia Deur Giulia",
-    description:
-      "Цветки ароматные, махровые. Куст высотой 20-25 см., компактный.",
-    price: 100,
-    vendorCode: 23,
-    image: "81",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 82,
-    name: "Гвоздика Super Trouper Antonio",
-    description:
-      "Растения образуют аккуратный компактный кустик с полностью махровыми цветками высотой 20-25 см. Цветки диаметром 3-4 см. Раннее продолжительное цветение.",
-    price: 100,
-    vendorCode: 24,
-    image: "82",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 83,
-    name: "Гвоздика Mediterráneo Santorini",
-    description:
-      "Растения образуют аккуратный компактный кустик с полностью махровыми цветками диаметром 7 см. Лепестки украшает изящная бахрома либо зубчатый край, нередко гофрированный.",
-    price: 100,
-    vendorCode: 25,
-    image: "83",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-  {
-    id: 84,
-    name: "Гвоздика Super Trouper Witta",
-    description:
-      "Растения образуют аккуратный компактный кустик с полностью махровыми цветками высотой 20-25 см. Цветки диаметром 3-4 см. Раннее продолжительное цветение.",
-    price: 100,
-    vendorCode: 26,
-    image: "84",
-    categoryId: 1,
-    subCategoryId: 6,
-    isAvailable: false,
-  },
-];
+const CAT_1_SUBCAT_8: CatalogItem[] = [];
+
+const CAT_1_SUBCAT_9: CatalogItem[] = [];
 
 const CAT_1_SUBCAT_2: CatalogItem[] = [
   {
@@ -378,7 +128,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "52",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 53,
@@ -390,7 +140,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "53",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 54,
@@ -402,7 +152,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "54",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 55,
@@ -414,7 +164,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "55",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 56,
@@ -426,7 +176,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "56",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 57,
@@ -438,7 +188,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "57",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 58,
@@ -450,7 +200,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "58",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 59,
@@ -462,7 +212,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "59",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 60,
@@ -474,7 +224,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "60",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -487,7 +237,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "61",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 62,
@@ -499,7 +249,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "62",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 63,
@@ -511,7 +261,7 @@ const CAT_1_SUBCAT_4: CatalogItem[] = [
     image: "63",
     categoryId: 1,
     subCategoryId: 4,
-    isAvailable: false,
+    isAvailable: true,
   },
 ];
 
@@ -1028,7 +778,8 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
     ...CAT_1_SUBCAT_1,
     ...CAT_1_SUBCAT_2,
     ...CAT_1_SUBCAT_4,
-    ...CAT_1_SUBCAT_6,
+    ...CAT_1_SUBCAT_7,
+    ...CAT_1_SUBCAT_8,
   ].sort((a, b) => a.name.localeCompare(b.name));
 
   const notAvailableList: CatalogItem[] = [];
@@ -1079,11 +830,23 @@ export const SUB_CATEGORIES_MAP: Record<
       value: "Пеларгония",
       subItems: null,
     },
-    6: {
-      id: 6,
-      value: "Гвоздика",
+    7: {
+      id: 7,
+      value: "Фуксия",
       subItems: null,
-      length: CAT_1_SUBCAT_6.length,
+      length: CAT_1_SUBCAT_7.length,
+    },
+    8: {
+      id: 8,
+      value: "Георгины",
+      subItems: null,
+      length: CAT_1_SUBCAT_8.length,
+    },
+    9: {
+      id: 9,
+      value: "Бегония",
+      subItems: null,
+      length: CAT_1_SUBCAT_9.length,
     },
   },
 };
