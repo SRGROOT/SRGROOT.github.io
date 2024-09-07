@@ -1134,7 +1134,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     vendorCode: 37,
     image: "114",
     categoryId: 1,
-    subCategoryId: 9,
+    subCategoryId: 1,
     isAvailable: true,
   },
   {
@@ -1411,6 +1411,7 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
     ...CAT_1_SUBCAT_4,
     ...CAT_1_SUBCAT_7,
     ...CAT_1_SUBCAT_8,
+    ...CAT_1_SUBCAT_9,
   ].sort((a, b) => a.name.localeCompare(b.name));
 
   const notAvailableList: CatalogItem[] = [];
