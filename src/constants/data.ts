@@ -300,7 +300,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "3",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 4,
@@ -316,7 +316,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
   },
   {
     id: 5,
-    name: "Петуния Sweetunia Purple",
+    name: "Петуния Potunia Purple",
     description:
       "Популярная серия гибридной петунии с полуампельным габитусом и оригинальными окрасками цветков, высота 20-30 см, побеги 60-70 см. Шикарные шарообразные шапки слегка приподнимаются над кашпо.",
     price: 110,
@@ -324,11 +324,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "5",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 6,
-    name: "Петуния Sweetunia White",
+    name: "Петуния Potunia White",
     description:
       "Популярная серия гибридной петунии с полуампельным габитусом и оригинальными окрасками цветков, высота 20-30 см, побеги 60-70 см. Шикарные шарообразные шапки слегка приподнимаются над кашпо.",
     price: 110,
@@ -336,7 +336,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "6",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 7,
@@ -348,7 +348,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "7",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 8,
@@ -384,7 +384,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "11",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 10,
@@ -433,7 +433,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "14",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 15,
@@ -493,7 +493,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "19",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 20,
@@ -517,7 +517,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "21",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 22,
@@ -553,7 +553,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "24",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 25,
@@ -589,7 +589,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "27",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 28,
@@ -625,11 +625,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "30",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 31,
-    name: "Potunia Piccola Magenta Star",
+    name: "Петуния Potunia Piccola Magenta Star",
     description:
       "Кусты компактные, пышные, хорошо сохраняют шаровидную форму и ветвятся. Боковые побеги формируются без дополнительных прищипок. Cорта устойчивы к перепадам температуры, болезням, дождю. Высота куста до 50см.",
     price: 110,
@@ -641,7 +641,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
   },
   {
     id: 32,
-    name: "Петуния Sweetunia Pinkalicious",
+    name: "Петуния Potunia Pinkalicious",
     description:
       "Популярная серия петунии с полуампельным габитусом и оригинальными окрасками цветков. Высота 20-30 см, побеги 60-70 см, обильное и продолжительное цветение.",
     price: 110,
@@ -649,7 +649,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "32",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 33,
@@ -661,7 +661,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "33",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 34,
@@ -697,11 +697,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "36",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 37,
-    name: "Петуния Surprise Canary Yellow",
+    name: "Петуния Potunia Canary Yellow",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 110,
@@ -709,11 +709,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "37",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 38,
-    name: "Петуния Surprise Lilac Blue",
+    name: "Петуния Potunia Piccola Cobalt Blue",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 110,
@@ -721,11 +721,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "38",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 39,
-    name: " Peppy Hot Red 2024",
+    name: "Peppy Hot Red 2024",
     description:
       "Ампельная петуния, все сорта имеют цветы со звездой. Высота куста 20 см, длина побегов 45-50 см. Крупные цветки, обильное и продолжительное цветение. Образует шикарные шапки благодаря отличному ветвлению, форма куста каскадная, нарастает быстро.",
     price: 110,
@@ -745,7 +745,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "40",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 41,
@@ -757,7 +757,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "41",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 42,
