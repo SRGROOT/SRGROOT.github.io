@@ -469,6 +469,18 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
     subCategoryId: 2,
     isAvailable: true,
   },
+  {
+    id: 138,
+    name: "Вербена Drums Dark Purple",
+    description:
+      "Ампельная обильно цветущая ширина куста 40 - 60 см. Быстро разрастается, образует красивые ровные кустики из крупных чисто белого цвета соцветий. Подходит для посадки в подвесные, напольные кашпо и открытый грунт. Предпочитает солнечные места и обильный полив. Устойчива к непогоде.",
+    price: 100,
+    vendorCode: 10,
+    image: "138",
+    categoryId: 1,
+    subCategoryId: 2,
+    isAvailable: true,
+  },
 ];
 
 const CAT_1_SUBCAT_4: CatalogItem[] = [
