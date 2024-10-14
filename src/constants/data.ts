@@ -367,7 +367,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "103",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 104,
@@ -378,7 +378,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "104",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 105,
@@ -389,7 +389,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "105",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -401,7 +401,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "106",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -413,7 +413,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "107",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 108,
@@ -424,7 +424,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "108",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -436,7 +436,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "109",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -448,7 +448,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "110",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 111,
@@ -459,7 +459,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "111",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -471,7 +471,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "112",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -483,7 +483,7 @@ const CAT_1_SUBCAT_9: CatalogItem[] = [
     image: "113",
     categoryId: 1,
     subCategoryId: 9,
-    isAvailable: true,
+    isAvailable: false,
   },
 ];
 
