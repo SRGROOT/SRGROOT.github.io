@@ -1402,18 +1402,6 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     subCategoryId: 1,
     isAvailable: true,
   },
-
-  {
-    id: 126,
-    name: "Potunia Canary Yellow ",
-    description: "",
-    price: 130,
-    vendorCode: 22,
-    image: "126",
-    categoryId: 1,
-    subCategoryId: 1,
-    isAvailable: true,
-  },
   //
   {
     id: 127,
