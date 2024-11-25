@@ -3,7 +3,7 @@ import { CatalogItem, CategoryItem } from "../types/types";
 const CAT_1_SUBCAT_7: CatalogItem[] = [
   {
     id: 85,
-    name: "Фуксия  Blue Angel",
+    name: "Фуксия Blue Angel",
     description:
       "Блю Ангел крупноцветковая фуксия, которая идеально подходит для выращивания в подвесных корзинках. Фиолетово-голубой цвет в сочетании с ярко-белой чашечкой выглядит очень привлекательно. Этот сорт является одной из групп «Гигант», и все разновидности гигантских фуксий имеют длительный период цветения.",
     price: 100,
@@ -1190,7 +1190,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "36",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 37,
