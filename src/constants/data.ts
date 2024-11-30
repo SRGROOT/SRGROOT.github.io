@@ -1573,6 +1573,53 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     subCategoryId: 1,
     isAvailable: true,
   },
+
+  //
+  {
+    id: 154,
+    name: "Петуния Capella Salmon Imp.",
+    description: "",
+    price: 130,
+    vendorCode: 66,
+    image: "154",
+    categoryId: 1,
+    subCategoryId: 1,
+    isAvailable: true,
+  },
+  {
+    id: 155,
+    name: "Петуния Cascadias Chili Red",
+    description: "",
+    price: 130,
+    vendorCode: 67,
+    image: "155",
+    categoryId: 1,
+    subCategoryId: 1,
+    isAvailable: true,
+  },
+
+  {
+    id: 156,
+    name: "Петуния Splash Dance Bolero Blue",
+    description: "",
+    price: 130,
+    vendorCode: 68,
+    image: "156",
+    categoryId: 1,
+    subCategoryId: 1,
+    isAvailable: true,
+  },
+  {
+    id: 157,
+    name: "Петуния capella fuchsia lace",
+    description: "",
+    price: 130,
+    vendorCode: 69,
+    image: "157",
+    categoryId: 1,
+    subCategoryId: 1,
+    isAvailable: true,
+  },
 ];
 
 export const ITEMS_LIST: CatalogItem[] = (() => {
