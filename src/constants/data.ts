@@ -238,7 +238,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "139",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 140,
@@ -249,7 +249,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "140",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 141,
@@ -260,7 +260,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "141",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -272,7 +272,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "142",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -284,7 +284,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "143",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 144,
@@ -295,7 +295,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "144",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -307,7 +307,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "145",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -319,7 +319,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "146",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -342,7 +342,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "148",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 149,
@@ -353,7 +353,30 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "149",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: false,
+    isAvailable: true,
+  },
+  //
+  {
+    id: 158,
+    name: "Георгины Dalaya Maxi Tampico",
+    description: "",
+    price: 100,
+    vendorCode: 17,
+    image: "158",
+    categoryId: 1,
+    subCategoryId: 8,
+    isAvailable: true,
+  },
+  {
+    id: 159,
+    name: "Георгин Lubega Power Tricolor",
+    description: "",
+    price: 100,
+    vendorCode: 18,
+    image: "159",
+    categoryId: 1,
+    subCategoryId: 8,
+    isAvailable: true,
   },
 ];
 
