@@ -633,154 +633,6 @@ const CAT_1_SUBCAT_2: CatalogItem[] = [
   },
 ];
 
-const CAT_1_SUBCAT_4: CatalogItem[] = [
-  {
-    id: 52,
-    name: "Sunny Compact Hazel",
-    description:
-      "Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
-    price: 100,
-    vendorCode: 6,
-    image: "52",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 53,
-    name: "Sunny FELIX",
-    description:
-      " Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
-    price: 100,
-    vendorCode: 7,
-    image: "53",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 54,
-    name: "Sunny Gaia",
-    description:
-      "Компактная крупноцветковая серия. Высоту достигает 20см. Цветет на протяжении всего сезона до самых заморозков. Куст очень плотный и жесткий.",
-    price: 100,
-    vendorCode: 8,
-    image: "54",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 55,
-    name: "Blueberry Shake",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 1,
-    image: "55",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 56,
-    name: "Lemon Ice",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 2,
-    image: "56",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 57,
-    name: "Violet Ice",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 3,
-    image: "57",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 58,
-    name: "Dalina Double Francisco",
-    description:
-      "Крупноцветковый остеоспермум. Низкорослый. Высота куста до 40 см. Очень обильно цветущий. Засухоустойчив. Цветы махрового типа.",
-    price: 100,
-    vendorCode: 4,
-    image: "58",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 59,
-    name: "Margarita Yellow",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 5,
-    image: "59",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 60,
-    name: "Flower Power Tropic Sun",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 9,
-    image: "60",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-
-  {
-    id: 61,
-    name: "Margarita Double White",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 10,
-    image: "61",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 62,
-    name: "Махровый 3D Deep Sun",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 11,
-    image: "62",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-  {
-    id: 63,
-    name: "Margarita Double Pink",
-    description:
-      "Кусты прямостоячие, ветвистые. Цветки до 6 см в диаметре. Цветет на протяжении всего сезона до самых заморозков. Высота 25 – 35 см, ширина 35 – 50 см.",
-    price: 100,
-    vendorCode: 12,
-    image: "63",
-    categoryId: 1,
-    subCategoryId: 4,
-    isAvailable: false,
-  },
-];
-
 const CAT_1_SUBCAT_1: CatalogItem[] = [
   {
     id: 1,
@@ -1649,7 +1501,6 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
   const sortedList = [
     ...CAT_1_SUBCAT_1,
     ...CAT_1_SUBCAT_2,
-    ...CAT_1_SUBCAT_4,
     ...CAT_1_SUBCAT_7,
     ...CAT_1_SUBCAT_8,
     ...CAT_1_SUBCAT_9,
@@ -1659,6 +1510,11 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
 
   return sortedList
     .reduce<CatalogItem[]>((acc, item) => {
+      // Для петунии (subCategoryId: 1) скрываем недоступные товары
+      if (item.subCategoryId === 1 && !item.isAvailable) {
+        return acc; // просто пропускаем недоступные петунии
+      }
+
       if (item.isAvailable) {
         acc.push(item);
         return acc;
@@ -1691,12 +1547,6 @@ export const SUB_CATEGORIES_MAP: Record<
       id: 3,
       value: "Калибрахоа",
       subItems: null,
-    },
-    4: {
-      id: 4,
-      value: "Остеоспермум",
-      subItems: null,
-      length: CAT_1_SUBCAT_4.length,
     },
     5: {
       id: 5,
