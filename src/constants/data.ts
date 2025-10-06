@@ -816,7 +816,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "3",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 4,
@@ -864,7 +864,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "7",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 8,
@@ -924,7 +924,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "12",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
@@ -1033,7 +1033,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "21",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 22,
@@ -1069,7 +1069,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "24",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 25,
@@ -1081,7 +1081,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "25",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 26,
@@ -1141,11 +1141,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "30",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 31,
-    name: "Петуния Potunia Piccola Magenta Star",
+    name: "Sweetunia Hot Pink Touch",
     description:
       "Кусты компактные, пышные, хорошо сохраняют шаровидную форму и ветвятся. Боковые побеги формируются без дополнительных прищипок. Cорта устойчивы к перепадам температуры, болезням, дождю. Высота куста до 50см.",
     price: 130,
@@ -1153,7 +1153,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "31",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 32,
@@ -1177,7 +1177,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "33",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 34,
@@ -1213,11 +1213,11 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "36",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 37,
-    name: "Петуния Potunia Canary Yellow",
+    name: "Sweetunia Camary Yellow",
     description:
       "Каскадная петуния, образующая очень пышные, шарообразные шапки. Высота 40-50 см., плотное, обильное цветение",
     price: 130,
@@ -1225,7 +1225,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "37",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 38,
@@ -1261,7 +1261,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "40",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 41,
@@ -1273,7 +1273,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "41",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 42,
@@ -1481,7 +1481,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "131",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 132,
@@ -1618,7 +1618,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "155",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
 
   {
