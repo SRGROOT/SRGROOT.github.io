@@ -1845,6 +1845,7 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
   const sortedList = [
     ...CAT_1_SUBCAT_1,
     ...CAT_1_SUBCAT_2,
+    ...CAT_1_SUBCAT_3,
     ...CAT_1_SUBCAT_7,
     ...CAT_1_SUBCAT_8,
     ...CAT_1_SUBCAT_9,
