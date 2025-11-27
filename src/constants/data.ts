@@ -321,18 +321,6 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     subCategoryId: 8,
     isAvailable: true,
   },
-
-  {
-    id: 147,
-    name: "Георгины Dalina Mini Cruzilia",
-    description: "",
-    price: 100,
-    vendorCode: 13,
-    image: "147",
-    categoryId: 1,
-    subCategoryId: 8,
-    isAvailable: false,
-  },
   {
     id: 148,
     name: "Георгины Hypnotica White",
@@ -1647,7 +1635,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "173",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 174,
