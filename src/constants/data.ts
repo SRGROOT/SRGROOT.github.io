@@ -824,7 +824,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "2",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 3,
@@ -1029,7 +1029,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "19",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 20,
@@ -1041,7 +1041,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "20",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: false,
+    isAvailable: true,
   },
   {
     id: 21,
@@ -1835,6 +1835,18 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     price: 130,
     vendorCode: 113,
     image: "175",
+    categoryId: 1,
+    subCategoryId: 1,
+    isAvailable: true,
+  },
+  //
+  {
+    id: 192,
+    name: "Петуния Blue Diamond",
+    description: "",
+    price: 130,
+    vendorCode: 114,
+    image: "192",
     categoryId: 1,
     subCategoryId: 1,
     isAvailable: true,
