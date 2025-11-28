@@ -1,4 +1,4 @@
-import { Badge, Box, IconButton } from "@mui/material";
+import { Badge, Box, Button, Typography } from "@mui/material";
 import { useGlobalStore } from "../../../store/store";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useState } from "react";
@@ -20,12 +20,18 @@ export const Cart = () => {
   };
 
   return (
-    <Box>
-      <IconButton onClick={handleClickOpen}>
-        <Badge badgeContent={cartItemsAmount} color="secondary">
-          <ShoppingCartOutlinedIcon color="primary" />
-        </Badge>
-      </IconButton>
+    <Box display="flex" alignItems="center">
+      <Button
+        sx={{ textTransform: "none" }}
+        onClick={handleClickOpen}
+        endIcon={
+          <Badge badgeContent={cartItemsAmount} color="secondary">
+            <ShoppingCartOutlinedIcon color="primary" />
+          </Badge>
+        }
+      >
+        <Typography>Мой заказ</Typography>
+      </Button>
       <CartModal isOpen={isCartOpened} cart={cart} onClose={handleClose} />
     </Box>
   );

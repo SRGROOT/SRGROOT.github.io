@@ -10,8 +10,14 @@ import {
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 import { CatalogItem } from "../../../types/types";
-import { setItemToCart, useGlobalStore } from "../../../store/store";
+import {
+  createAlert,
+  setIsOrderReminderDisplayed,
+  setItemToCart,
+  useGlobalStore,
+} from "../../../store/store";
 import { ItemCounter } from "../Cart";
+import { AlertType } from "../../../constants/constants";
 
 type Props = {
   data: CatalogItem;
@@ -19,7 +25,9 @@ type Props = {
 
 export const CatalogListItem = ({ data }: Props) => {
   const { description, id, image, name, price, vendorCode, isAvailable } = data;
-
+  const isOrderReminderDisplayed = useGlobalStore(
+    (state) => state.isOrderReminderDisplayed
+  );
   const cartItem = useGlobalStore((state) => state.cart[id]);
   const cartAmount = cartItem?.amount || null;
 
@@ -51,6 +59,15 @@ export const CatalogListItem = ({ data }: Props) => {
             <Button
               onClick={() => {
                 setItemToCart({ ...data, amount: 1 });
+                if (!isOrderReminderDisplayed) {
+                  createAlert({
+                    id: Math.random(),
+                    message:
+                      "Товар добавлен, не забудьте оформить заказ в корзине.",
+                    type: AlertType.INFO,
+                  });
+                  setIsOrderReminderDisplayed(true);
+                }
               }}
               variant="contained"
               size="small"

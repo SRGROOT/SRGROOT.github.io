@@ -10,6 +10,7 @@ export type Store = {
   loaderCount: number;
   alertsMap: Record<Alert["id"], Alert>;
   page: number;
+  isOrderReminderDisplayed: boolean;
 };
 
 export const useGlobalStore = create<Store>()(
@@ -21,6 +22,7 @@ export const useGlobalStore = create<Store>()(
       loaderCount: 0,
       alertsMap: {},
       page: 1,
+      isOrderReminderDisplayed: Boolean(false),
     }))
   )
 );
@@ -58,6 +60,13 @@ export const resetCart = () =>
 export const setItemToCart = (item: CartItem) =>
   useGlobalStore.setState((state) => {
     state.cart[item.id] = item;
+  });
+
+export const setIsOrderReminderDisplayed = (
+  isOrderReminderDisplayed: boolean
+) =>
+  useGlobalStore.setState((state) => {
+    state.isOrderReminderDisplayed = isOrderReminderDisplayed;
   });
 
 export const addCartItemAmount = (id: CartItem["id"], amount: number) =>
