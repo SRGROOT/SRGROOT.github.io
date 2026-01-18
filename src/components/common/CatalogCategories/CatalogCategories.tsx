@@ -14,12 +14,15 @@ export const CatalogCategories = ({ data }: Props) => {
 
   return (
     <Paper
-      elevation={5}
+      elevation={2}
       sx={({ breakpoints, spacing }) => ({
         position: "sticky",
         top: spacing(4),
         overflow: "hidden",
         height: "min-content",
+        borderRadius: 2,
+        border: "1px solid",
+        borderColor: "divider",
         [breakpoints.down("md")]: {
           position: "static",
         },

@@ -27,11 +27,19 @@ export const Search = ({
 
   return (
     <Paper
-      elevation={5}
+      elevation={2}
       sx={{
         display: "flex",
         px: 1,
         py: 0.5,
+        borderRadius: 2,
+        border: "1px solid",
+        borderColor: "divider",
+        "&:focus-within": {
+          borderColor: "primary.main",
+          boxShadow: "0 0 0 2px rgba(47, 111, 0, 0.1)",
+        },
+        transition: "all 0.2s ease-in-out",
       }}
     >
       <InputBase

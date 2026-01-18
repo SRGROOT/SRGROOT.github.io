@@ -16,6 +16,7 @@ export const CatalogSearch = () => {
         position: "sticky",
         top: spacing(4),
         zIndex: 100,
+        mb: 2,
         [breakpoints.down("md")]: {
           position: "static",
         },

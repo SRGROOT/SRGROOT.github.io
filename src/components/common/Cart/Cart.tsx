@@ -22,15 +22,34 @@ export const Cart = () => {
   return (
     <Box display="flex" alignItems="center">
       <Button
-        sx={{ textTransform: "none" }}
+        variant="outlined"
+        sx={{
+          textTransform: "none",
+          borderRadius: 2,
+          px: 2,
+          py: 1,
+          borderColor: "primary.main",
+          "&:hover": {
+            borderColor: "primary.dark",
+            backgroundColor: "rgba(47, 111, 0, 0.04)",
+          },
+        }}
         onClick={handleClickOpen}
         endIcon={
-          <Badge badgeContent={cartItemsAmount} color="secondary">
-            <ShoppingCartOutlinedIcon color="primary" />
+          <Badge
+            badgeContent={cartItemsAmount}
+            color="secondary"
+            sx={{
+              "& .MuiBadge-badge": {
+                fontWeight: 600,
+              },
+            }}
+          >
+            <ShoppingCartOutlinedIcon color="primary"  />
           </Badge>
         }
       >
-        <Typography>Мой заказ</Typography>
+        <Typography fontWeight={500}>Мой заказ</Typography>
       </Button>
       <CartModal isOpen={isCartOpened} cart={cart} onClose={handleClose} />
     </Box>

@@ -4,17 +4,24 @@ import { Logo } from "../Logo";
 export const Footer = () => {
   return (
     <Box
-      sx={(theme) => ({
-        py: 2,
+      sx={{
+        py: 3,
         position: "relative",
         mt: "auto",
-        borderTop: `1px solid ${theme.palette.divider}`,
-        backgroundColor: theme.palette.background.default,
-      })}
+        borderTop: 1,
+        borderColor: "divider",
+        backgroundColor: "background.paper",
+      }}
     >
       <Container>
         <Logo />
-        <Typography mt={1} fontSize={12}>
+        <Typography
+          mt={1.5}
+          fontSize={13}
+          sx={{
+            color: "text.secondary",
+          }}
+        >
           &copy; 2023-{new Date().getFullYear()} Flower Market. Все права
           защищены.
         </Typography>
@@ -22,10 +29,11 @@ export const Footer = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: 0,
-          right: 0,
+          bottom: 8,
+          right: 16,
           fontSize: "10px",
-          opacity: 0.2,
+          opacity: 0.3,
+          color: "text.secondary",
         }}
       >
         v{__APP_VERSION__} {__COMMIT_HASH__}

@@ -64,7 +64,12 @@ export const OrderForm = ({ isCartNotEmpty, onSubmit }: Props) => {
 
       <Button
         onClick={() => onSubmit({ name, phone, email })}
-        sx={{ mt: 4 }}
+        sx={{
+          mt: 4,
+          py: 1.5,
+          fontSize: "1rem",
+          fontWeight: 600,
+        }}
         disabled={!isFormValid}
         fullWidth
         variant="contained"

@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
-  Divider,
   List,
   ListItem,
   ListItemText,
@@ -80,12 +79,25 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
 
   return (
     <Dialog
-      sx={{ zIndex: 800 }}
+      sx={{
+        zIndex: 800,
+        "& .MuiDialog-paper": {
+          borderRadius: fullScreen ? 0 : 2,
+        },
+      }}
       open={isOpen}
       fullScreen={fullScreen}
       onClose={handleClose}
     >
-      <DialogTitle>Ваш заказ</DialogTitle>
+      <DialogTitle
+        sx={{
+          fontWeight: 600,
+          fontSize: "1.5rem",
+          pb: 1,
+        }}
+      >
+        Ваш заказ
+      </DialogTitle>
       <IconButton
         onClick={handleClose}
         sx={{
@@ -105,7 +117,16 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
                 const { id, image, name, price, vendorCode } = item;
 
                 return (
-                  <ListItem key={id} sx={{ px: 0 }}>
+                  <ListItem
+                    key={id}
+                    disablePadding
+                    sx={{
+                      px: 0,
+                      py: 1.5,
+                      borderRadius: 1,
+                      mb: 1,
+                    }}
+                  >
                     <Box
                       component="img"
                       src={
@@ -113,11 +134,16 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
                           .href
                       }
                       sx={({ breakpoints }) => ({
-                        height: "80px",
+                        height: "100px",
+                        width: "100px",
                         aspectRatio: 1,
-                        borderRadius: 1,
+                        borderRadius: 1.5,
+                        objectFit: "cover",
+                        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+                        flexShrink: 0,
                         [breakpoints.down("md")]: {
-                          height: "50px",
+                          height: "80px",
+                          width: "80px",
                         },
                       })}
                     />
@@ -168,32 +194,37 @@ export const CartModal = ({ isOpen, onClose, cart }: Props) => {
               })}
             </List>
 
-            <Divider />
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
                 py: 2,
+                px: 2,
+                backgroundColor: "rgba(47, 111, 0, 0.04)",
+                borderRadius: 1,
+                mt: 2,
+                width: "100%",
               }}
             >
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
+                  fontWeight: 500,
                 }}
               >
-                Сумма заказа:{" "}
+                Сумма заказа:
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "24px",
+                  fontSize: "28px",
+                  color: "primary.main",
                 }}
                 fontWeight="bold"
               >
                 {getOrderTotal(list)} ₽
               </Typography>
             </Box>
-            <Divider />
           </>
         ) : (
           <Typography

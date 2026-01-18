@@ -19,7 +19,16 @@ export const Alert = ({ alert: { id, message, type } }: Props) => {
   }, []);
 
   return (
-    <AlertMUI severity={type} onClose={handleCloseAlert}>
+    <AlertMUI
+      severity={type}
+      onClose={handleCloseAlert}
+      sx={{
+        borderRadius: 0,
+        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+        borderBottom: "1px solid",
+        borderColor: "divider",
+      }}
+    >
       {message}
     </AlertMUI>
   );
