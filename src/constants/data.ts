@@ -775,7 +775,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "189",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 190,
@@ -786,7 +786,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "190",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 191,
@@ -797,7 +797,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "191",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
 ];
 
