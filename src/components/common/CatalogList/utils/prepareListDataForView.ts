@@ -5,7 +5,8 @@ import { CatalogItem } from "../../../../types/types";
 export const prepareListDataForView = (
   selectedCategories: Store["selectedCategories"],
   search: Store["search"],
-  page: Store["page"]
+  page: Store["page"],
+  itemsPerPage: number
 ): [
   CatalogItem[],
   {
@@ -13,7 +14,7 @@ export const prepareListDataForView = (
   }
 ] => {
   const selectedCategoriesAmount = Object.keys(selectedCategories).length;
-  const currentVisibleItemsAmount = page * 9;
+  const currentVisibleItemsAmount = page * itemsPerPage;
 
   if (!search && !selectedCategoriesAmount)
     return [

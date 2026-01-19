@@ -1,19 +1,26 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { setPage, useGlobalStore } from "../../../store/store";
 import { CatalogListItem } from "./CatalogListItem";
 import { prepareListDataForView } from "./utils";
 
 export const CatalogList = () => {
+  const theme = useTheme();
+  const isMediumScreen = useMediaQuery(theme.breakpoints.down("lg"));
+
   const selectedCategories = useGlobalStore(
     (state) => state.selectedCategories
   );
   const search = useGlobalStore((state) => state.search);
   const page = useGlobalStore((state) => state.page);
 
+  // Определяем количество элементов на страницу в зависимости от количества колонок
+  const itemsPerPage = isMediumScreen ? 8 : 9;
+
   const [data, { isLastPage }] = prepareListDataForView(
     selectedCategories,
     search,
-    page
+    page,
+    itemsPerPage
   );
 
   if (!data.length)
