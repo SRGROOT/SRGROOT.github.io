@@ -13,7 +13,7 @@ export const prepareListDataForView = (
   }
 ] => {
   const selectedCategoriesAmount = Object.keys(selectedCategories).length;
-  const currentVisibleItemsAmount = page * 8;
+  const currentVisibleItemsAmount = page * 9;
 
   if (!search && !selectedCategoriesAmount)
     return [
