@@ -238,7 +238,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "139",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 140,
@@ -249,7 +249,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "140",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 141,
@@ -260,7 +260,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "141",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -272,7 +272,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "142",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -284,7 +284,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "143",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 144,
@@ -295,7 +295,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "144",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -307,7 +307,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "145",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -319,7 +319,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "146",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 148,
@@ -330,7 +330,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "148",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 149,
@@ -341,7 +341,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "149",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   //
   {
@@ -353,7 +353,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "158",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 159,
@@ -364,7 +364,7 @@ const CAT_1_SUBCAT_8: CatalogItem[] = [
     image: "159",
     categoryId: 1,
     subCategoryId: 8,
-    isAvailable: true,
+    isAvailable: false,
   },
 ];
 
@@ -631,7 +631,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "176",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 177,
@@ -642,7 +642,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "177",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 178,
@@ -653,7 +653,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "178",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 179,
@@ -664,7 +664,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "179",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 180,
@@ -675,7 +675,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "180",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 181,
@@ -686,7 +686,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "181",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 182,
@@ -697,7 +697,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "182",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -709,7 +709,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "183",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 184,
@@ -720,7 +720,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "184",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 185,
@@ -731,7 +731,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "185",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 186,
@@ -742,7 +742,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "186",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 187,
@@ -753,7 +753,7 @@ const CAT_1_SUBCAT_3: CatalogItem[] = [
     image: "187",
     categoryId: 1,
     subCategoryId: 3,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 188,
@@ -824,7 +824,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "2",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 3,
@@ -836,7 +836,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "3",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 4,
@@ -884,7 +884,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "7",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 8,
@@ -944,7 +944,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "12",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -1029,7 +1029,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "19",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 20,
@@ -1041,7 +1041,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "20",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 21,
@@ -1053,7 +1053,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "21",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 22,
@@ -1089,7 +1089,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "24",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 25,
@@ -1161,7 +1161,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "30",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 31,
@@ -1173,7 +1173,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "31",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 32,
@@ -1197,7 +1197,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "33",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 34,
@@ -1245,7 +1245,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "37",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 38,
@@ -1281,7 +1281,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "40",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 41,
@@ -1293,7 +1293,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "41",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 42,
@@ -1501,7 +1501,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "131",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 132,
@@ -1638,7 +1638,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "155",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
 
   {
@@ -1683,7 +1683,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "161",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 162,
@@ -1705,7 +1705,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "163",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 164,
@@ -1716,7 +1716,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "164",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 165,
@@ -1727,7 +1727,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "165",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 166,
@@ -1738,7 +1738,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "166",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 167,
@@ -1749,7 +1749,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "167",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 168,
@@ -1760,7 +1760,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "168",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 169,
@@ -1782,7 +1782,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "170",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 171,
@@ -1793,7 +1793,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "171",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 172,
@@ -1804,7 +1804,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "172",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 173,
@@ -1826,7 +1826,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "174",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     id: 175,
@@ -1837,7 +1837,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "175",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
   //
   {
@@ -1849,7 +1849,7 @@ const CAT_1_SUBCAT_1: CatalogItem[] = [
     image: "192",
     categoryId: 1,
     subCategoryId: 1,
-    isAvailable: true,
+    isAvailable: false,
   },
 ];
 
@@ -1868,9 +1868,9 @@ export const ITEMS_LIST: CatalogItem[] = (() => {
   return sortedList
     .reduce<CatalogItem[]>((acc, item) => {
       // Для петунии (subCategoryId: 1) скрываем недоступные товары
-      if (item.subCategoryId === 1 && !item.isAvailable) {
-        return acc; // просто пропускаем недоступные петунии
-      }
+      // if (item.subCategoryId === 1 && !item.isAvailable) {
+      //   return acc; // просто пропускаем недоступные петунии
+      // }
 
       if (item.isAvailable) {
         acc.push(item);
@@ -1893,7 +1893,7 @@ export const SUB_CATEGORIES_MAP: Record<
       value: "Петуния",
       subItems: null,
       // Для петунии (subCategoryId: 1) скрываем недоступные товары, длинну берем только по доступным
-      length: CAT_1_SUBCAT_1.filter((item) => item.isAvailable).length,
+      length: CAT_1_SUBCAT_1.length//CAT_1_SUBCAT_1.filter((item) => item.isAvailable).length,
     },
     2: {
       id: 2,
